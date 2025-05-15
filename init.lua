@@ -493,6 +493,26 @@ require('lazy').setup({
       'saghen/blink.cmp',
     },
     config = function()
+	    require("mason").setup({})
+
+require("mason-lspconfig").setup({
+  ensure_installed = {
+    "pyright",    -- example LSPs, add what you want
+    "tsserver",
+    "lua_ls",
+  },
+  automatic_installation = true,
+})
+
+require("mason-tool-installer").setup({
+  ensure_installed = {
+    "prettier",
+    "eslint",
+  },
+  auto_update = true,
+  run_on_start = true,
+})
+
       -- Brief aside: **What is LSP?**
       --
       -- LSP is an initialism you've probably heard, but might not understand what it is.
