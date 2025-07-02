@@ -1,5 +1,9 @@
 # kickstart.nvim
 
+1. Install nvim
+2. run `git clone https://github.com/naoufalcb/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim`
+3. run `nvim`
+
 ## Introduction
 
 A starting point for Neovim that is:
